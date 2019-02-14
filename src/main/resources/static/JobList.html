@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>JobList</title>
+    <link rel="stylesheet" type="text/css" href="style/JobList.css">
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg">
+                <a href="http://www.ymm56.com/index.php?g=&m=index&a=index"><img src="img/SR-02.png">
+            	</a>
+            </div>
+            <ul class="menu-ul">
+                <li class="menu-first-li" id="indexBtn"><a href="index.html">首页</a></li>
+                <li class="menu-second-li" id="jobBtn"><a>开放职位</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="mainContainer">
+        <div class="mainText">
+            <div class="mainTextLeft">
+                <ul class="ul-list">
+                    <li><a href="index.html">招聘首页</a></li>
+                    <li><a href="">></a></li>
+                    <li><a href="JobList.html">职位列表</a></li>
+                </ul>
+                <div class="searchBox">
+                    <div class="jobSelectTitle">职位筛选</div>
+                    <hr>
+                    <div class="jobSearchBox">
+                        <input type=""  class="inputJobBox" id="searchJob" onkeydown="keyDown(event)">
+                        <button class="btnJobBox" id="btnJobBoxId">搜索职位</button>
+                    </div>
+                    <div class="selectBox">
+                        <select id="citySelect">
+                            <option value="上海">上海</option>
+                            <option value="苏州">苏州</option>
+                        </select>
+                        <span id="clearCity">x</span>
+                        <select id="classSelect">
+                           <!--<option disabled selected hidden>请选择职能类型</option>  --> 
+                        </select>
+                        <select id="deptSelect">
+                        </select>
+                    </div>
+                </div>
+                <div class="jobTable" id="jobTableId">
+                  <!-- 数据由js动态插入 -->
+                </div>
+                <ul class="pagination" id="paginationId">
+                </ul>
+            </div>
+            <div class="mainTextRight">
+                <div class="newJob">
+                	<div class="rightTopic">最新职位</div>
+                	<hr>
+                	 <div class="jobName">
+                            <p class="warnTopic">[优先]</p>
+                            <span>高级安全开发工程师</span>
+                     </div>
+                	 <div class="jobName">
+                            <p class="warnTopic">[优先]</p>
+                            <span>数据分析工程师</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/JobList.js"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

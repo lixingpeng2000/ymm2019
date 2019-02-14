@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxp.dao.IEmpDAO">
+   <insert id="doCreate" parameterType="com.lxp.entity.EmployEntity">
+       insert into emp(id,ename,tel,mail,jname,jcity,cv) values(#{empNo},#{ename},#{tel},#{mail},#{jname},#{jcity},#{cv})
+   </insert>
+   
+  <delete  id="doRemove"  parameterType="String"> 
+	  delete from emp where id=#{id}
+  </delete>
+	<resultMap id="EmpResultMap" type="com.lxp.entity.EmployEntity">
+		<result property="ename" column="ename"/>
+		<result property="jcity" column="jcity"/>
+		<result property="tel" column="tel"/>
+		<result property="mail" column="mail"/>
+		<result property="jname" column="jname"/>
+	</resultMap>
+  <select id="findByTel" parameterType="com.lxp.entity.EmployEntity"  resultMap="EmpResultMap">  
+	  select * from emp where tel=#{tel} and jname=#{jname} and jcity=#{jcity}
+  </select> 
+</mapper>

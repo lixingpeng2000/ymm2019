@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <meta charset="UTF-8">
+    <title>jobEnter</title>
+    <link rel="stylesheet" type="text/css" href="style/jobEnter.css">
+</head>
+
+<body>
+	<!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg">
+                <a href="index.html"><img src="img/SR-02.png">
+                </a>
+            </div>
+            <ul class="menu-ul">
+                <li class="menu-first-li" id="indexBtn"><a>职位录入</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="mainContainer">
+        <div class="mainText">
+            <div class="enterBlock">
+            	<span class="titleName">职位名称</span>
+            	<input type="" name="" class="inputEnter" id="jname">
+            </div>
+            
+            <div class="enterBlock">
+                <span class="titleName">城市</span>
+            	<select id="citySelect">
+                        <option value="上海">上海</option>
+                        <option value="苏州">苏州</option>
+                </select>
+            </div>
+            <div class="enterBlock">
+            	<span class="titleName">所属部门</span>
+            	<input type="" name="" class="inputEnter" id="dept">
+            </div>
+            <div class="enterBlock">
+            	<span class="titleName">岗位类别</span>
+            	<input type="" name="" class="inputEnter" id="jclass">
+            </div>
+            <div class="enterBlock">
+            	<span class="titleNamearea">岗位职责</span>
+               	<textarea class="inputEnterarea"  id="duty"></textarea>
+            </div>
+            <div class="enterBlock">
+                <span class="titleNamearea">岗位要求</span>
+               	<textarea class="inputEnterarea" id="req"></textarea>
+            </div>
+            <div class="enterBlock">
+            	<span class="titleName">岗位性质</span>
+            	<input type="" name="" class="inputEnter" id="nature">
+            </div>
+            <button class="submit" id="submitId">提交</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/jobEnter.js"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

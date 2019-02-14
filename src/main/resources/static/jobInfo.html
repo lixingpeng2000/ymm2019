@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jobInfo</title>
+    <link rel="stylesheet" type="text/css" href="style/jobInfo.css">
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg">
+                <a href="index.html"><img src="img/SR-02.png">
+                </a>
+            </div>
+            <ul class="menu-ul">
+                <li class="menu-first-li" id="indexBtn"><a href="index.html">首页</a></li>
+                <li class="menu-second-li" id="jobBtn"><a>开放职位</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="mainContainer">
+        <div class="mainText">
+            <div class="mainTextLeft">
+                <ul class="ul-list">
+                    <li><a href="index.html">招聘首页</a></li>
+                    <li><a href="">></a></li>
+                    <li><a href="JobList.html">职位列表</a></li>
+                    <li><a href="">></a></li>
+                    <li id="jobInfoLi"></li>
+                </ul>
+                <div class="Container">
+                    <div class="jobItem">
+                        <div class="jobName">
+                            <p class="warnTopic">[优先]</p>
+                            <span id="jnameId"></span>
+                        </div>
+                        <div class="jobInfo">
+                            <span id="jdeptId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="natureId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="jclassId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="jcityId"></span>
+                            <div class="time">发布时间：<span id="publishTimeId"></span></div>
+                        </div>
+                    </div>
+                    <hr class="jobItemLine">
+                    <div class="rightTopic">职位描述</div>
+                    <p class="jobRequire  mark">岗位要求：</p>
+                    <p id="reqId" class="containMart"></p>
+                    <p class="jobRequire  mark">任职资格：</p>
+                    <p id="dutyId" class="containMart"></p>
+                    <button class="firstBtn" id="btnId">申请职位</button>
+                 </div>
+            </div>
+            <div class="mainTextRight">
+                <div class="newJob">
+                    <div class="rightTopic">最新职位</div>
+                    <hr>
+                    <div class="jobName">
+                        <p class="warnTopic">[优先]</p>
+                        <span>高级安全开发工程师</span>
+                    </div>
+                    <div class="jobName">
+                        <p class="warnTopic">[优先]</p>
+                        <span>数据分析工程师</span><br/><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/jobInfo.js"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

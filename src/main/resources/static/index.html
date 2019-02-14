@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <meta charset="UTF-8">
+    <title>海岸线</title>
+    <link rel="stylesheet" type="text/css" href="style/yunmanman.css">
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg"><a href="/ymm"><img src="img/login.png"></a></div>
+            <ul class="mainul">
+                <!--<li class="navli" id="indexId"><a href="index.html">首页</a></li>
+                <li class="navli" id="yunmanmanId"><a href="">关于海岸线</a></li>-->
+                <li class="navli" id="newsId"><a href="setting.html">权限设置</a></li>
+                <li class="navli" id="productId"><a href="">系统管理</a></li>
+                <li class="navli" id="humanId"><a href="index.html">人才招聘</a></li>
+            </ul>
+            <div id="buttonId">
+                <a href="login.html" id='loginId'>登录</a>
+                <a href="register.html" id="regisId">注册</a>
+                <a href="logout.html">注消</a>
+            </div>
+            <ul class="product-hide" id="product-hide-id">
+                <li class="adminCss" id="jobEnterId"><a href="jobFilterEnter.html?timestamp"+new Date().getTime()>职位录入</a></li>
+                <li class="adminCss" id="jobApplyId"><a href="jobFilterApplyList.html?timestamp"+new Date().getTime()>应聘详情</a></li>
+                <li class="adminCss" id="jobShowId"><a href="jobFilterShow.html?timestamp"+new Date().getTime()">职位展示</a></li>
+                
+            </ul>
+            <ul class="human-hide" id="human-hide-id">
+                <li id="socialEmp"><a href="SocialRecruitment.html">社会招聘</a></li>
+            </ul>
+        </div>
+        <hr class="hrclass" id="hrId">
+        <div class="nav-line" id="nav-line-id">
+        </div>
+    </div>
+    <!--正文-->
+    <div class="banner">
+        <!--轮播图-->
+        <!--    <div class="my-swiper-container swiper-container">   -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/1-1.jpg" class="swiperImgSize">
+                </div>
+                <div class="swiper-slide"><img src="img/1-2.jpg" class="swiperImgSize">
+                </div>
+                <div class="swiper-slide"><img src="img/1-3.jpg" class="swiperImgSize">
+                </div>
+                <div class="swiper-slide"><img src="img/1-4.jpg" class="swiperImgSize">
+                </div>
+                <div class="swiper-slide"><img src="img/1-5.jpg" class="swiperImgSize">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--核心内容-->
+        <div class="mid-block-list">
+            <div class="block" id="regionCar">
+                <div class="blockText">
+                    <p class="blockTitle">认证会员车辆</p>
+                    <strong><span class="blockMoney">400</span></strong>万
+                </div>
+                <div class="blockImg">
+                    <img id="indexmid1" src="img/index-mid-1.png" class="img-hover">
+                </div>
+            </div>
+            <div class="block">
+                <div class="blockText">
+                    <p class="blockTitle">认证货主会员</p>
+                    <strong><span class="blockMoney">100</span></strong>万
+                </div>
+                <div class="blockImg">
+                    <img src="img/index-mid-2.png" class="img-hover">
+                </div>
+            </div>
+            <div class="block">
+                <div class="blockText">
+                    <p class="blockTitle">每日货源信息</p>
+                    <strong><span class="blockMoney">600</span></strong>万
+                </div>
+                <div class="blockImg">
+                    <img src="img/index-mid-3.png" class="img-hover">
+                </div>
+            </div>
+            <div class="block">
+                <div class="blockText">
+                    <p class="blockTitle">线下货运网点</p>
+                    <strong><span class="blockMoney">1200</span></strong>万
+                </div>
+                <div class="blockImg">
+                    <img src="img/index-mid-4.png" class="img-hover">
+                </div>
+            </div>
+        </div>
+        <!--新闻中心-->
+        <div class="news-center">
+            <h1>新闻中心</h1>
+            <div class="news-center-container">
+                <div class="news-block">
+                    <img src="img/news-1.png">
+                    <ul>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满首届YMM-TECH算法大赛启动</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满亮相数字中国建设峰会</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">团中央书记处书记汪鸿雁考察运满满</a></li>
+                    </ul>
+                    <a href=""http://www.ymm56.com/index.php?g=&m=index&a=news_detail&id=123"><button>查看更多</button></a>              
+                </div>
+                <div class="news-block">
+                    <img src="img/news-2.jpg">
+                    <ul>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满首届YMM-TECH算法大赛启动</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满亮相数字中国建设峰会</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">团中央书记处书记汪鸿雁考察运满满</a></li>
+                    </ul>
+                    <button>查看更多</button>
+                </div>
+                <div class="news-block">
+                    <img src="img/news-3.jpg">
+                    <ul>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满成2018年南京市第一批独角兽企业</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满亮相数字中国建设峰会</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">团中央书记处书记汪鸿雁考察运满满</a></li>
+                    </ul>
+                    <button>查看更多</button>
+                </div>
+                <div class="news-block">
+                    <img src="img/news-4.jpg">
+                    <ul>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满首届YMM-TECH算法大赛启动</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">运满满亮相数字中国建设峰会</a></li>
+                        <li><span class="spanpoint">.</span><a href="" class="newsa">团中央书记处书记汪鸿雁考察运满满</a></li>
+                    </ul>
+                    <button>查看更多</button>
+                </div>
+            </div>
+        </div>
+        <!--合作中心-->
+        <div class="cooperation">
+            <div class="co-container">
+                <div class="co-block block1">
+                    <p>合作伙伴</p>
+                </div>
+                <div class="co-block block2">
+                    <img src="img/c1.png">
+                    <img src="img/c2.png">
+                    <img src="img/c3.png">
+                    <img src="img/c4.png">
+                    <img src="img/c5.png">
+                    <img src="img/c6.png">
+                    <img src="img/c7.png">
+                    <img src="img/c8.png">
+                    <img src="img/c9.png">
+                    <img src="img/c10.png">
+                    <img src="img/c11.png">
+                    <img src="img/c12.png">
+                    <img src="img/c13.png">
+                    <img src="img/c14.png">
+                </div>
+                <div class="co-block block3">
+                    <p>融资进程</p>
+                </div>
+                <div class="co-block block4">
+                    <img src="img/c15.png">
+                    <img src="img/c16.png">
+                    <img src="img/c17.png">
+                    <img src="img/c18.png">
+                    <img src="img/c19.png">
+                    <img src="img/c20.png">
+                    <img src="img/c14.png">
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bottom-bar">
+            <div class="bottom-1">
+                <img src="img/bottom-bar-bg.jpg">
+            </div>
+            <div class="bottom-text">
+                <div class="bottom-text-01">
+                    <img src="img/bottom-bar-logo.png">
+                </div>
+                <div class="bottom-text-02">
+                    <ul>
+                        <li>首页</li>
+                        <li>关于运满满</li>
+                        <li>新闻中心</li>
+                        <li>产品中心</li>
+                        <li>人才招聘</li>
+                    </ul>
+                </div>
+                <div class="bottom-text-03">
+                    <p>媒体合作：market@ymm56.com</p>
+                    <p>客服电话：400-862-5656</p>
+                    <p>商务合作：business@ymm56.com</p>
+                    <p>总部地址：江苏省南京市雨花区软件大道107-1号天溯科技园4栋3-5层</p>
+                    <img src="img/bottom-bar-wechat-logo.png" id="wechat">
+                    <img src="img/bottom-bar-weibo-logo.png" id="weibo">
+                </div>
+                <div class="bottom-text-04">
+                    <p>下载App</p>
+                    <img src="img/app.jpg">
+                    <img src="img/app.jpg">
+                    <div class="bottom-text-04-person">
+                        <p>货主版</p>
+                        <p>司机版</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-2">
+                <p>Copyright 2013-2015 江苏满运软件科技有限公司 All Rights Reserved 苏ICP备16054664号-1 360网站安全检测平台</p>
+                <p>中华人民共和国增值电信业务经营许可证编号：苏B2-20170128</p>
+                <img src="img/gs.png">
+            </div>
+        </div>
+        <!--二维码弹框-->
+        <div class="qr-code-window"  id="qrcode">
+            <img src="img/app.jpg">
+            <div class="circle" id="circleId"><span>x</span></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/yunmanman.js"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/swiper.min.js"></script>
+    <script>
+    //轮播图效果
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        // // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+
+        //抓手形状
+        grabCursor: true,
+
+
+    }) 
+    </script>
+</body>
+
+</html>

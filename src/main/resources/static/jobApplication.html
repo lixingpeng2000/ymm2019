@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JobApplication</title>
+    <link rel="stylesheet" type="text/css" href="style/jobApplication.css">
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg">
+                <a href="index.html"><img src="img/SR-02.png">
+                </a>
+            </div>
+            <ul class="menu-ul">
+                <li class="menu-first-li" id="indexBtn"><a href="index.html">首页</a></li>
+                <li class="menu-second-li" id="jobBtn"><a>开放职位</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="mainContainer">
+        <div class="mainText">
+            <div class="mainTextLeft">
+                <ul class="ul-list">
+                    <li><a href="index.html">招聘首页</a></li>
+                    <li><a href="">></a></li>
+                    <li><a href="JobList.html">职位列表</a></li>
+                    <li><a href="">></a></li>
+                    <li id="jobInfoLi"></li>
+                    <li><a href="">></a></li>
+                    <li id="jobApplicationLi"></li>
+                </ul>
+                <div class="Container">
+                		<div class="jobItem">
+                        <div class="jobName">
+                            <p class="warnTopic">[优先]</p>
+                            <span id="jnameId"></span>
+                        </div>
+                        <div class="jobInfo">
+                            <span id="jdeptId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="natureId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="jclassId"></span>
+                            <p class="columnLine">|</p>
+                            <span id="jcityId"></span>
+                            <div class="time">发布时间：<span id="publishTimeId"></span></div>
+                        </div>
+                    </div>
+                    <hr class="jobItemLine">
+                    <div class="midContainer">
+                        <div class="topPart">
+                            <div class="top-left">
+                                <p class="subTopic">上传简历*</p>
+                                <hr>
+                                <div class="subFile" id="bannerId">
+                                  <!--   <p class="subTitle">上传简历</p>
+                                    <span class="fileinput-button" id="introduceId">
+           							  <span>上传简历</span>
+                                    <input type="file" id="introduceInput">
+                                    </span>
+                                    <p class="subCommit">支持PDF、HTML、WORD、TXT、PPT、EML、JPG、PNG、WPS等简历格式</p> -->
+                                    <input type="file" id="frontImg"  class="fileclass" name="myfiles" accept="image/*" onchange="ajaxFileUpload(this)">
+                                    <img src="" alt="" id="img">
+                                </div>
+
+
+<!--                                 <div class="subFile">
+                                    <p class="subTitle">上传附件</p>
+                                    <span class="fileinput-button" id="fileId">
+           							<span>上传附件</span>
+                                    <input type="file" id="fileInput">
+                                    </span>
+                                    <p class="subCommit">所有附件大小总和不超过50MB</p>
+                                </div> -->
+                            </div>
+                            <div class="top-right">
+                            	<div class="block">
+                            		<hr class="hrline">
+                            	    <div>上传</div>
+                            	</div>
+                            	<div class="block">
+                            		<hr class="hrline">
+                            	    <div>个人信息</div>
+                            	</div>                           	
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <div class="bottom-left">
+                            	<p class="subTopic">个人信息</p>
+                                <hr>
+                                <div class="inputZone">
+                                	<div class="inputBox">
+                                		<span>姓名</span>
+                                		<span>*</span>
+                                		<input type="" name="" class="pinfoInput" placeholder="请输入您的姓名" id="name">
+                                	</div>
+                                	<div class="inputBox">
+                                		<span>手机号</span>
+                                		<span>*</span>
+                                		<input type="" name="" class="pinfoInput" placeholder="请输入手机号" id="tel">
+                                	</div>
+                                	<div class="inputBox">
+                                		<span>邮箱</span>
+                                		<span>*</span>
+                                		<input type="" name="" class="pinfoInput" placeholder="常用邮箱" id="mail">
+                                	</div>
+                                </div>
+                                <div class="subDiv">
+                                	<button class="sbmitJobBtn" id="submitId">提交应聘申请</button>
+                                </div>
+                            </div>
+                            <div class="bottom-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainTextRight">
+                <div class="newJob">
+                    <div class="rightTopic">从网站导入</div>
+                    <hr>
+                    <div class="jobName">
+                        <span class="fontClass">智联招聘</span>
+                        <span class="enterBox">导入</span>
+                    </div>
+                    <div class="jobName">
+                        <span class="fontClass">前程无忧</span>
+                        <span class="enterBox">导入</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/jobApplication.js"></script>
+    <script type="text/javascript" src="script/common.js"></script>
+    <script type="text/javascript" src="script/qiniu.min.js"></script>
+    <script type="text/javascript" src="script/plupload.full.min.js"></script>
+</body>
+
+</html>

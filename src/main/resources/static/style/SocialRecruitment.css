@@ -1,0 +1,246 @@
+body div {
+    margin: 0;
+}
+
+
+
+
+
+/**导航栏**/
+
+
+/*.nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 200;
+    border:solid red 1px;
+}
+
+.navContainer {
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    border:solid black 1px;
+}
+
+.navimg {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer img {
+    height: 46px;
+    width: 130px;
+}
+
+.mainul {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+    border: solid 1px black;
+    display: flex;
+}
+
+.navli {
+    width: 80px;
+    height: 80px;
+    /* margin-left: 5px; */
+
+
+/* text-align: center; */
+
+
+/*    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navli a {
+    text-decoration: none;
+    cursor:pointer;
+}*/
+
+.nav {
+    width: 100%;
+    height: 80px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.navContainer {
+    width: 80%;
+    height: inherit;
+/*    border: solid 1px red;*/
+    display: flex;
+}
+
+.navimg {
+    width: 200px;
+/*    border: solid 1px black;*/
+    height: inherit;
+}
+
+.navimg a {
+    width: 120px;
+    height: 80px;
+/*    border: solid 1px blue;*/
+    display: block;
+    cursor: pointer;
+}
+
+.navimg img {
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.menu-ul {
+    /*border: solid 1px blue;*/
+    display: flex;
+}
+
+.menu-first-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+}
+
+.menu-second-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+.menu-ul a:hover {
+    color:black;  
+}
+.menu-ul a {
+    text-decoration: none;
+    color:grey;
+    cursor: pointer;
+}
+
+
+
+/*
+*正文**/
+
+.mainContainer {
+/*    border: solid 1px black;*/
+}
+
+
+
+
+/**mainImg**/
+
+.mainImg {
+/*    border: solid 1px red;*/
+}
+
+.mainImg img {
+    width: 100%;
+    height: 576px;
+}
+
+
+
+
+/**mainText**/
+
+.mainText {
+/*    border: solid 1px blue;*/
+    display: flex;
+    justify-content: center;
+    height: 820px;
+}
+
+.jobText {
+/*    border: solid 1px red;*/
+    height: 600px;
+    width: 80%;
+}
+
+.openJob {
+    /*border: solid 1px black;*/
+    height: 158px;
+    display: flex;
+    justify-content: center;
+}
+
+.openJobmain {
+    width:150px;
+}
+
+.openJob h1 {
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.jobline {
+    background-color: orange;
+    height: 2px;
+    width:30px;
+}
+.employJob {
+    text-align: center;
+}
+.cityJob {
+    /*border: solid 1px blue;*/
+    height: 188px;
+    display: flex;
+    justify-content: center;
+}
+
+.cityblock {
+    border: solid 1px grey;
+    width: 300px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cityblock a {
+    display: block;
+    height: 80px;
+    width: 140px;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.cityText {
+    font-size: 28px;
+    font-weight: bold;
+    color: blue;
+}
+
+.jobNum {
+    border-radius: 32px;
+    line-height: 32px;
+    border: 1px #0C8CF6 solid;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0C8CF6;
+    width: 140px;
+    margin-top: 10px;
+}

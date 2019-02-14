@@ -1,0 +1,271 @@
+body div {
+    margin: 0;
+}
+
+/*导航条*/
+.nav {
+    width: 100%;
+    height: 80px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.navContainer {
+    width: 80%;
+    height: inherit;
+/*    border: solid 1px red;*/
+    display: flex;
+}
+
+.navimg {
+    width: 200px;
+/*    border: solid 1px black;*/
+    height: inherit;
+}
+
+.navimg a {
+    width: 120px;
+    height: 80px;
+/*    border: solid 1px blue;*/
+    display: block;
+    cursor: pointer;
+}
+
+.navimg img {
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.menu-ul {
+    /*border: solid 1px blue;*/
+    display: flex;
+}
+
+.menu-first-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+}
+
+.menu-second-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+.menu-ul a:hover {
+    color:black;  
+}
+.menu-ul a {
+    text-decoration: none;
+    color:grey;
+    cursor: pointer;
+}
+
+
+
+/*
+*正文**/
+
+.mainContainer {
+	margin-top: 80px;
+    /*border: solid 1px black;*/
+    height:900px;
+    background-color: rgb(245, 127, 23);
+}
+.mainText {
+	/*border: solid 1px black;*/
+	height: inherit;
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.mainTextLeft {
+	/*border: solid 1px blue;*/
+	height: inherit;
+	width: 58%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mainTextRight {
+	/*border: solid 1px green;*/
+	height: inherit;
+	width: 28%;
+	text-align: center;
+}
+.ul-list {
+	/*border: solid 1px blue;*/
+	display: flex;
+	list-style: none;
+	margin-left: -40px;
+}
+.ul-list a {
+	text-decoration: none;
+}
+.searchBox {
+	position: relative;
+    top: -10px;
+	/*border: solid 1px black;*/
+	background-color: white;
+	width: 100%;
+	height: 200px;
+}
+.jobTable {
+	/*border: solid 1px black;*/
+	background-color: white;
+	width: 100%;
+	height: 540px;
+    cursor: pointer;
+}
+.newJob {
+	position: relative;
+    top: 60px;
+	/*border: solid 1px black;*/
+	background-color: white;
+	width: 100%;
+	height: 450px;
+}
+.jobSelectTitle {
+	height: 30%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    line-height: 60px
+}
+.jobSearchBox {
+    height: 30%;
+    /*border: solid 1px black;*/
+}
+.inputJobBox {
+    width: 550px;
+    height: 30px;
+}
+.btnJobBox {
+    height: 36px;
+    width: 120px;
+    background-color: #0C8CF6;	
+    cursor: pointer;
+}
+.selectBox {
+	/*border: solid 1px black;*/
+    height: 30%;
+    display: flex;
+    justify-content: space-around
+}
+.selectBox select {
+	width: 30%;
+    height: 30px;
+}
+.jobItem {
+	/*border:solid 1px blue;*/
+	height: 80px;
+}
+.jobItemLine {
+	background-color: grey;
+}
+.jobName {
+	display: flex;
+	height: 40px;
+	line-height: 40px;
+}
+.jobName p {
+	margin:0;
+}
+.jobName span {
+	margin:0;	
+	font-weight: bold;
+	color: grey;
+}
+.jobInfo {
+	display: flex;
+	height: 40px;
+}
+.jobInfo p {
+	margin:0;
+	margin-right: 20px;
+	color: grey;
+}
+.jobInfo span {
+	margin:0;
+	margin-right: 20px;	
+	color: grey;
+}
+.warnTopic {
+	color: rgb(245, 127, 23);
+	font-weight: bold;
+}
+.time {
+	color: grey;
+    position: relative;
+    right: -155px;
+}
+.time2 {
+	color: grey;
+    position: relative;
+    right: -110px;
+}
+.rightTopic {
+	height: 50px;
+    text-align: left;
+    line-height: 50px;
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+#clearCity {
+	height: 30px;
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+    top: 3px;
+}
+
+.myaclass {
+    text-decoration: none;
+}
+
+/*实现分页**/
+ul.pagination {
+    /*display: inline-block;*/
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: rgb(245, 127, 23);}
+
+ul.pagination li a {
+    border: 1px solid #ddd; /* Gray */
+}
+ul.pagination li a:focus {
+   background-color: rgb(245, 127, 23)
+}

@@ -1,0 +1,136 @@
+body div {
+    margin: 0;
+}
+
+/*导航条*/
+.nav {
+    width: 100%;
+    height: 80px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.navContainer {
+    width: 80%;
+    height: inherit;
+/*    border: solid 1px red;*/
+    display: flex;
+}
+
+.navimg {
+    width: 200px;
+/*    border: solid 1px black;*/
+    height: inherit;
+}
+
+.navimg a {
+    width: 120px;
+    height: 80px;
+/*    border: solid 1px blue;*/
+    display: block;
+    cursor: pointer;
+}
+
+.navimg img {
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.menu-ul {
+    /*border: solid 1px blue;*/
+    display: flex;
+}
+
+.menu-first-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+}
+
+.menu-second-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+.menu-ul a:hover {
+    color:black;  
+}
+.menu-ul a {
+    text-decoration: none;
+    color:grey;
+    cursor: pointer;
+}
+
+
+
+/*
+*正文**/
+
+.mainContainer {
+    margin-top: 80px;
+    border: solid 1px black;
+    height:680px;
+    background-color: rgb(245, 127, 23);
+}
+.mainText {
+    border: solid 1px blue;
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 35px;
+}
+.enterBlock {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.titleName {
+    width: 100px;
+    display: inline-block;
+    font-size: 20px;
+}
+.titleNamearea {
+    width: 100px;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: -19px; 
+}
+.inputEnter {
+    width: 800px;
+    height: 30px;
+}
+.inputEnterarea {
+    width: 800px;
+    height: 45px;
+}
+.lrbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.lrbtn  button{
+    background-color: #35b5ff;
+    width: 150px;
+    border: solid 1px #35b5ff;
+    border-radius: 20px;
+    margin-left: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+

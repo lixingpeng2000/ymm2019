@@ -1,0 +1,113 @@
+body div {
+    margin: 0;
+}
+
+/*导航条*/
+.nav {
+    width: 100%;
+    height: 80px;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.navContainer {
+    width: 80%;
+    height: inherit;
+/*    border: solid 1px red;*/
+    display: flex;
+}
+
+.navimg {
+    width: 200px;
+/*    border: solid 1px black;*/
+    height: inherit;
+}
+
+.navimg a {
+    width: 120px;
+    height: 80px;
+/*    border: solid 1px blue;*/
+    display: block;
+    cursor: pointer;
+}
+
+.navimg img {
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.menu-ul {
+    /*border: solid 1px blue;*/
+    display: flex;
+}
+
+.menu-first-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+}
+
+.menu-second-li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+.menu-ul a:hover {
+    color:black;  
+}
+.menu-ul a {
+    text-decoration: none;
+    color:grey;
+    cursor: pointer;
+}
+
+
+
+/*
+*正文**/
+
+.mainContainer {
+	margin-top: 80px;
+    border: solid 1px black;
+    background-color: rgb(245, 127, 23);
+}
+.mainText {
+	border: solid 1px blue;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 10px;
+    min-height: 600px;
+}
+
+.lasttd {
+    width:100px;
+}
+.fb {
+    margin-left: 10px;
+}
+td {
+    height: 30px;
+    text-align: center;
+}
+.multiDelete {
+    margin-left: 1000px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.softDelete {
+     margin-left: 20px; 
+     text-decoration-style: none;
+}

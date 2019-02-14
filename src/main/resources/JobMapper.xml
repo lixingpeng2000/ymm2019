@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxp.dao.IJobDAO">
+   <insert id="doCreate" parameterType="com.lxp.entity.JobEntity">
+	  insert into job(id,jname,jcity,dept,jclass,duty,req,nature,createDate) values(#{id},#{jname},#{jcity},#{dept},#{jclass},#{duty},#{req},#{nature},curdate())
+   </insert>
+   
+  <delete  id="doRemove"  parameterType="int">  </delete>
+  <select id="findByid" parameterType="int">   </select> 
+  
+  <select id="doFind" parameterType="com.lxp.entity.JobEntity">  </select> 
+  <resultMap id="jobByCityResultMap" type="com.lxp.entity.JobCityEntity">
+	<result property="jcity" column="jcity"/>
+    <result property="jnum" column="count(*)"/>
+  </resultMap>
+    <select id="findByCity"    resultMap="jobByCityResultMap"> 
+		select jcity,count(*) from job where flag=1 group by jcity 
+	</select> 
+	<resultMap id="jobResultMap" type="com.lxp.entity.JobEntity">
+		<result property="jname" column="jname"/>
+		<result property="jcity" column="jcity"/>
+		<result property="dept" column="dept"/>
+		<result property="jclass" column="jclass"/>
+		<result property="nature" column="nature"/>
+		<result property="duty" column="duty"/>
+		<result property="req" column="req"/>
+	</resultMap>
+	<select id="findByCityList"   resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,createDate  from job where jcity=#{jcity} and flag=1
+	</select>
+	<resultMap id="jclassResultMap" type="String">
+    <result property="jclass" column="jclass"/>
+	</resultMap>
+	<select id="findJobClassList"   resultMap="jclassResultMap"> 
+		select distinct jclass from job where flag=1
+	</select>	
+	<resultMap id="deptResultMap" type="String">
+    <result property="dept" column="dept"/>
+	</resultMap>
+	<select id="findJobDeptList"   resultMap="deptResultMap"> 
+		select distinct dept from job where flag=1
+	</select>
+	<select id="findJobNameList"   parameterType="com.lxp.entity.JobEntity" resultMap="jobResultMap">  
+		select jname,jcity,dept,jclass,nature,createDate  from job where jcity=#{jcity} and jname like #{jname} and flag=1
+	</select>
+	<select id="findByCityandJclassList"   parameterType="com.lxp.entity.JobEntity"  resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,createDate  from job where jcity=#{jcity} and jclass=#{jclass} and flag=1
+	</select>
+	<select id="findByCityandDeptList"   parameterType="com.lxp.entity.JobEntity" resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,createDate  from job where jcity=#{jcity} and dept=#{dept} and flag=1
+	</select>
+	<select id="findBySelectAllList"   parameterType="com.lxp.entity.JobEntity" resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,createDate  from job where jcity=#{jcity} and dept=#{dept} and jclass=#{jclass} and flag=1
+	</select>
+	<select id="findByJnameandCityList"   parameterType="com.lxp.entity.JobEntity" resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,req,duty,createDate  from job where jcity=#{jcity} and jname=#{jname} and flag=1
+	</select>
+	<select id="findByALLConditionerList"    parameterType="com.lxp.entity.JobEntity"   resultMap="jobResultMap"> 
+		select jname,jcity,dept,jclass,nature,req,duty,createDate  from job where jcity=#{jcity} and jname=#{jname} and dept=#{dept} and jclass=#{jclass} and nature=#{nature} and flag=1
+	</select>
+	<!--连表查询-->
+	<resultMap id="jobempResultMap" type="com.lxp.entity.JobFilterApplyListEntity">
+		<id property="id" column="applyList_id"/>
+		<result property="ename" column="applyList_ename"/>
+		<result property="tel" column="applyList_tel"/>
+		<result property="jname" column="applyList_jname"/>
+		<result property="jcity" column="applyList_jcity"/>
+		<result property="jclass" column="applyList_jclass"/>
+		<result property="nature" column="applyList_nature"/>
+		<result property="duty" column="applyList_duty"/>
+		<result property="req" column="applyList_req"/>
+		<result property="cv" column="applyList_cv"/>
+	</resultMap>
+	<select id="findEmployJobList"    resultMap="jobempResultMap"> 
+		select e.id as applyList_id,e.ename as applyList_ename,e.tel as applyList_tel,e.jname as applyList_jname,
+		e.jcity as applyList_jcity,j.jclass as applyList_jclass,j.nature as applyList_nature,j.duty as applyList_duty,j.req  as applyList_req,
+		e.cv as applyList_cv from emp e join job j where e.jname=j.jname and e.jcity=j.jcity and j.flag=1
+	</select>
+	<select id="findJobAllList"   resultMap="jobResultMap"> 
+		select * from job where flag=1
+	</select>
+		<select id="findJobAllListDelete"   resultMap="jobResultMap"> 
+		select * from job where flag=0
+	</select>
+	<update  id="deleteJobById"  parameterType="String"> 
+		update job set flag=0 where id=#{jno} 
+	</update>
+	<update  id="rescue"  parameterType="String"> 
+		update job set flag=1 where id=#{jno} 
+	</update>
+	<update  id="update"  parameterType="com.lxp.entity.JobEntity"> 
+		update job set jname=#{jname},jcity=#{jcity},dept=#{dept},jclass=#{jclass},duty=#{duty},req=#{req},nature=#{nature} where id=#{id} and flag=1
+	</update>
+</mapper>

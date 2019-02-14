@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxp.dao.IUserDAO">
+   <insert id="doCreate" parameterType="com.lxp.entity.UserEntity">
+       insert into user(id,username,pwd) values(#{id},#{username},#{pwd})
+   </insert>
+   
+  <delete  id="doRemove"  parameterType="int">  </delete>
+  
+  <resultMap id="userResultMap" type="com.lxp.entity.UserEntity">
+   		<result property="username" column="username"/>
+  </resultMap>
+  <select id="doFindAll" resultMap="userResultMap">
+  		select * from user
+  </select> 
+  
+  <select id="doFind" parameterType="java.lang.String" resultType="com.lxp.entity.UserEntity"> 
+		select * from user where username=#{username} and pwd=#{pwd}
+  </select> 
+  <select id="doFindByusername" parameterType="java.lang.String" resultType="com.lxp.entity.UserEntity"> 
+		select * from user where username=#{username} 
+  </select> 
+</mapper>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="style/register.css">
+</head>
+
+<body>
+	<!--导航栏-->
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navimg">
+                <a href="index.html"><img src="img/SR-02.png">
+                </a>
+            </div>
+            <ul class="menu-ul">
+                <li class="menu-first-li" id="indexBtn"><a>注册界面</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="mainContainer">
+        <div class="mainText">
+            <div class="enterBlock">
+            	<span class="titleName">用户名</span>
+            	<input type="" id="userName" class="inputEnter">
+            </div>
+            <div class="enterBlock">
+            	<span class="titleName">密码</span>
+            	<input type="password" id="password" class="inputEnter">
+            </div>
+            <div class="enterBlock">
+            	<span class="titleName">确认密码</span>
+            	<input type="password" id="confirmP" class="inputEnter">
+            </div>
+            <div class="enterBlock" id="codeIddiv">
+                <span class="titleName">验证码</span>
+                <div class="bigdiv">
+                    <input  id="codeEnter">
+                    <div class="smalldiv" id="lastdiv"><img id="imgId" alt="验证码" src="img/code.jpg"></div>
+                    <div class="smalldiv"><a href="" onclick="changeImg()">换一张</a></div>  
+                </div>
+                           
+            </div>
+            <button class="submit" id="submitId">提交</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/register.js"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxp.dao.IUserRoleDAO">
+   <insert id="doCreate" parameterType="com.lxp.entity.UserRoleEntity">
+       insert into userRole(userName,roleName,weight) values(#{userName},#{roleName},#{weight})
+   </insert> 
+   <delete  id="doRemove"  parameterType="com.lxp.entity.UserRoleEntity"> 
+   	   delete from userRole where userName=#{userName}
+   </delete> 
+   	<resultMap id="userRoleResultMap" type="com.lxp.entity.UserRoleEntity">
+   		<result property="userName" column="userName"/>
+   		<result property="roleName" column="roleName"/>
+		<result property="weight" column="weight"/>
+	</resultMap>
+	<select id="doFind"   resultMap="userRoleResultMap"> 
+		select *  from  userRole  where userName=#{userName}
+	</select>
+	<resultMap id="userNameResultMap" type="com.lxp.entity.UserRoleEntity">
+   		<result property="userName" column="userName"/>
+ 	</resultMap>
+	<select id="dofindUserName"   resultMap="userNameResultMap"> 
+		select distinct userName  from  userRole  
+	</select>
+</mapper>
